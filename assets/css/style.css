@@ -52,6 +52,7 @@ ul {
 }
 
 .list {
+    margin-right: 15px;
     list-style: none;
     position: relative;
     border-radius: 10px;
@@ -69,6 +70,8 @@ ul {
     top: 100%;
     left: -150%;
     transition: 1s;
+
+    z-index: 1000;
 }
 
 .underlist {
@@ -84,3 +87,88 @@ ul {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************************************************************/
+
+main {
+    height: 100vh;
+    width: 100vw;
+
+    background-image: url(../images/cafe.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title_list {
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+    justify-content: space-between;
+
+    padding: 0 50px;
+}
+
+.phone, .inscription {
+    width: 50%;
+}
+
+.phone {
+
+}
+
+.inscription {
+
+    align-items: center;
+    position: relative;
+
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+.inscr_white, .inscr_yellow {
+    display: inline-block;
+}
+
+.inscr_white_first, .inscr_white_second,.inscr_yellow {
+    position: absolute;
+    box-shadow: 10px 5px 5px black;
+    
+}
+
+.inscr_white_first, .inscr_white_second {
+    padding: 0 10px;
+    background-color: whitesmoke;
+}
+
+.inscr_white_first {
+    left: 10px;
+    z-index: 100;
+}
+
+.inscr_yellow {
+    background-color: yellow;
+    padding: 0 40px;
+    top: 63px;
+
+    z-index: 10;
+}
+
+.inscr_white_second {
+    padding-top: 10px;
+    top: 105px;
+    left: -30px;
+    transform: rotate(-3deg);
+}
