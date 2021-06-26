@@ -7,6 +7,7 @@ body {
 
     font-family: 'Jomhuria', cursive;
     font-size: 40px;
+    min-width: 1080px;
 }
 
 header {
@@ -14,7 +15,7 @@ header {
 
     height: 70px;
     width: 100vw;
-    min-width: 1080px;
+    min-width: 1100px;
 
     background-color: black;
     justify-content: space-between;
@@ -112,27 +113,44 @@ main {
 }
 
 .title_list {
-    display: flex;
+    display: inline-block;
     height: 100%;
     width: 100%;
-
-    justify-content: space-between;
 
     padding: 0 50px;
 }
 
-.phone, .inscription {
-    width: 50%;
+.menu, .inscription {
+    display: inline-block;
+    width: 45%;
 }
 
-.phone {
+.menu {
+    width: 500px;
+    height: 600px;
 
+    margin: 50px 0 0 100px ;
+
+    border-radius: 20px;
+
+    color: white;
+    background-color: black;
+    opacity: 0.8;
+}
+
+.menu_list {
+    text-align: center;
+}
+
+.menu_link {
+    padding: 20px;
 }
 
 .inscription {
-
-    align-items: center;
     position: relative;
+
+    top: -300px;
+    left: 15%;
 
     padding: 20px;
     text-transform: uppercase;
